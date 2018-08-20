@@ -1,0 +1,123 @@
+h1 {
+    padding-left:30px;
+}
+
+li a {
+    color:white;
+    font-size:16px;
+}
+
+
+/*Admin*/
+
+#admin {
+    background-color:lightgrey;
+}
+
+#admin input {
+   margin:10px;
+   display:block;
+   margin-left:auto;
+   margin-right:auto;
+}
+
+#admin button {
+  margin:10px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#admin textarea {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#admin h3 {
+    text-align:center;
+    padding:20px;
+}
+
+#admin p {
+    text-align:center;
+    font-weight:700;
+    font-size:20px;
+}
+
+/*#admin select {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+} */
+
+#button {
+    width:5%;
+}
+
+#create {
+    background-color:rgb(209, 209, 153);
+    margin-top:50px;
+}
+
+#create p {
+    border-bottom:1px solid black;
+}
+
+.fa-trash-alt {
+    font-size:20px;
+    margin-left:7px;
+    margin-top:10px;
+    color:black;
+}
+
+.fa-pencil-alt {
+    font-size:20px;
+    margin-left:7px;
+    color:black;
+}
+
+#msg h3 {
+    text-align:center;
+}
+
+#ret {
+   background-color:lightblue;
+}
+
+#ret input {
+  margin:10px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#ret button {
+  margin:10px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto; 
+}
+
+#ret textarea {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#ret h3 {
+    text-align:center;
+    padding:20px;
+}
+
+#ret p {
+    text-align:center;
+    font-weight:700;
+    font-size:20px;
+}
+
+#ret select {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
