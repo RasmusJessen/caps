@@ -21,6 +21,7 @@ module.exports = function(app) {
 					let sql = `SELECT * FROM produkter`;
         			db.query(sql, [], function (req, produkter) {
 					message = "Et produkt er blevet oprettet";
+					console.log(produkter);
         			res.render('pages/admin', {
             		produkter: produkter,
 					message: message
