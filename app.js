@@ -4,6 +4,8 @@ const path       = require('path');
 const session    = require('express-session');
 const bodyParser = require("body-parser");
 
+require('./config/db_config');
+
 let port = 3300;
 // set the view engine to ejs
 app.set('port', port);

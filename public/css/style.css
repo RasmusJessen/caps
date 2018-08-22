@@ -32,6 +32,8 @@ li a {
   display:block;
   margin-left:auto;
   margin-right:auto;
+  width:20%;
+  height:80px;
 }
 
 #admin h3 {
@@ -45,11 +47,11 @@ li a {
     font-size:20px;
 }
 
-/*#admin select {
+#admin select {
   display:block;
   margin-left:auto;
   margin-right:auto;
-} */
+}
 
 #button {
     width:5%;
@@ -103,6 +105,8 @@ li a {
   display:block;
   margin-left:auto;
   margin-right:auto;
+  width:20%;
+  height:80px;
 }
 
 #ret h3 {
