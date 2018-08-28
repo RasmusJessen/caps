@@ -20,17 +20,17 @@
         <h3>Opret et Produkt</h3>
         <input type="hidden" name="id" value="">
         <p>
-        Produkter navn:
+        Produkt navn:
         </p>
         <input type="text" name="name" value="">
         <br>
         <p>
-        Produkter pris:
+        Produkt pris:
          </p>  
         <input type="text" name="price" value="">
         <br>
         <p>
-        Produkter info:
+        Produkt info:
         </p>
         <textarea type="text" name="info"></textarea>
         <br>
@@ -41,6 +41,7 @@
             <option value="1">Adidas</option>
             <option value="2">New York</option>
             <option value="3">Nike</option>
+            <option value="4">Tommy Hilfiger</option>
         </select>
         <button type="submit" id="submit" name="submit">Gem</button>
       </form>
@@ -49,17 +50,17 @@
         <h3>Redigere et Produkt</h3>
         <input type="hidden" name="id" value="<%= produkter[0].id %>">
         <p>
-        Produkter navn:
+        Produkt navn:
         </p>
         <input type="text" name="name" value="<%= produkter[0].navn %>">
         <br>
         <p>
-        Produkter pris:
+        Produkt pris:
          </p>  
         <input type="text" name="price" value="<%= produkter[0].pris %>">
         <br>
         <p>
-        Produkter info:
+        Produkt info:
         </p>
         <textarea type="text" name="info"><%= produkter[0].info %></textarea>
         <br>
@@ -70,6 +71,7 @@
             <option value="1">Adidas</option>
             <option value="2">New York</option>
             <option value="3">Nike</option>
+            <option value="4">Tommy Hilfiger</option>
         </select>
         <button type="submit" id="submit" name="submit">Gem</button>
       </form>
@@ -77,14 +79,26 @@
       
 
     <div id="create">
+        <h1>Alle Produkter</h1>
+        <table>
+                <tr>
+                   <th></th>
+                   <th style="text-align:center">Navn</th>
+                   <th style="text-align:center">Pris</th>
+                   <th style="text-align:center">Info</th>
+                </tr>
             <% produkter.forEach(function(produkter_data){ %>
-                <a href="ret?id=<%= produkter_data.id %>"><i class="fas fa-pencil-alt"></i></a> 
-                <a href="slet?id=<%= produkter_data.id %>" name="delete"><i class="far fa-trash-alt"></i></a>
-                <h1>ID: <%= produkter_data.id %></h1>
-                <h3><%= produkter_data.navn %><h3>
-                <h4><%= produkter_data.pris %> kr.</h4>
-                <p><%= produkter_data.info %></p>
+            <tr>
+                <td>
+                    <a href="ret?id=<%= produkter_data.id %>"><i class="fas fa-edit"></i></a> 
+                    <a href="slet?id=<%= produkter_data.id %>" name="delete"><i class="far fa-trash-alt"></i></a>
+                </td>
+                <td><%= produkter_data.navn %></td>
+                <td><%= produkter_data.pris %> kr.</td>
+                <td><%= produkter_data.info %></td>
+           </tr>
             <% })%>
+        </table>
         </div>
 
     <% include ../partials/javascript %>

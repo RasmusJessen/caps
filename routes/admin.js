@@ -1,5 +1,6 @@
 module.exports = function(app) {
-    app.post('/admin', function (req, res) {
+	
+	app.post('/admin', function (req, res) {
 		var post = req.body;
 		var name = post.name;
 		var price = post.price;
@@ -102,4 +103,5 @@ app.get('/admin', function(req, res) {
     });
 })
 });
+
 }
